@@ -45,7 +45,7 @@ chatbot = Chat(pairs, reflections)
 
 
 def chat():
-    print("Welcome to the Chatbot! Type 'help' for assistance or 'quit' to exit.")
+    print("Welcome to the Chatbot! Type 'help' for assistance or 'bye' to exit.")
     while True:
         user_input = input("You: ").strip().lower()
         if user_input == "quit":
