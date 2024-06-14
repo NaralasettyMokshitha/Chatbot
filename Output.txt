@@ -1,0 +1,27 @@
+Welcome to the Chatbot! Type 'help' for assistance or 'bye' to exit.
+You: hi
+Chatbot: Hello! How can I assist you today?
+You: my name is mokshi
+Chatbot: Hello mokshi, how can I help you today?
+You: what can you do?
+Chatbot: I can provide weather information, introduce myself or ask how you are.
+You: what is the weather like?
+Chatbot: I don't have weather information yet, but I'm still under development!
+You: how are you doing?
+Chatbot: I'm doing well, thank you! How can I assist you today?
+You: what is your name?
+Chatbot: I am a chatbot created by Mokshitha. What's your name?
+You: my name is mokshi
+Chatbot: Hello mokshi, how can I help you today?
+You: which languages do you speak?
+Chatbot: i speak english.
+You: i am hungry
+Chatbot: You should get something to eat!
+You: suggest me some food
+Chatbot: Sure! How about some pasta,pizza,burger or biriyani?
+You: thankyou
+Chatbot: you're welcome! Let me know if there's anything else you need.
+You: help
+Chatbot: You can ask me about the weather, introduce yourself, ask how I am, or just say hi!
+You: bye
+Chatbot: Goodbye! Have a great day
