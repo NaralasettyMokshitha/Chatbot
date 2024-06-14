@@ -1,0 +1,61 @@
+import nltk
+from nltk.chat.util import Chat, reflections
+
+
+nltk.download('punkt')
+
+
+reflections = {
+    "i am": "you are",
+    "i was": "you were",
+    "i": "you",
+    "i'd": "you would",
+    "i've": "you have",
+    "i'll": "you will",
+    "my": "your",
+    "you are": "I am",
+    "you were": "I was",
+    "you've": "I have",
+    "you'll": "I will",
+    "your": "my",
+    "yours": "mine",
+    "you": "me",
+    "me": "you"
+}
+
+
+pairs = [
+    [r"hi|hello", ["Hello! How can I assist you today?"]],
+    [r"how are you?", ["I'm doing well, thank you! How can I assist you today?"]],
+    [r"what can you do?", ["I can provide weather information, introduce myself, and ask how I am."]],
+    [r"how are you doing?", ["I'm doing well, thank you! How can I assist you today?"]],
+    [r"my name is (.*)", ["Hello %1, how can I help you today?"]],
+    [r"what is the weather like?", ["I don't have weather information yet, but I'm still under development!"]],
+    [r"what is your name?", ["I am a chatbot created by Mokshitha. What's your name?"]],
+    [r"which languages do you speak?", ["i speak english."]],
+    [r"i am hungry", ["You should get something to eat!"]],
+    [r"suggest me some food", ["Sure! How about some pasta,pizza,burger or biriyani?"]],
+    [r"help", ["You can ask me about the weather, introduce yourself, ask how I am, or just say hi!"]],
+    [r"bye", ["Goodbye! Have a great day!"]],
+    [r"(.*)", ["Sorry, I don't understand. Can you rephrase that?"]]
+]
+
+
+chatbot = Chat(pairs, reflections)
+
+
+def chat():
+    print("Welcome to the Chatbot! Type 'help' for assistance or 'quit' to exit.")
+    while True:
+        user_input = input("You: ").strip().lower()
+        if user_input == "quit":
+            print("Chatbot: Goodbye! Have a great day!")
+            break
+        response = chatbot.respond(user_input)
+        if response:
+            print("Chatbot:", response)
+        else:
+            print("Chatbot: Sorry, I don't understand. Can you rephrase that?")
+
+if __name__ == "__main__":
+    chat()
