@@ -27,7 +27,7 @@ reflections = {
 pairs = [
     [r"hi|hello", ["Hello! How can I assist you today?"]],
     [r"how are you?", ["I'm doing well, thank you! How can I assist you today?"]],
-    [r"what can you do?", ["I can provide weather information, introduce myself, and ask how I am."]],
+    [r"what can you do?", ["I can provide weather information, introduce myself, and ask how you are."]],
     [r"how are you doing?", ["I'm doing well, thank you! How can I assist you today?"]],
     [r"my name is (.*)", ["Hello %1, how can I help you today?"]],
     [r"what is the weather like?", ["I don't have weather information yet, but I'm still under development!"]],
@@ -36,6 +36,7 @@ pairs = [
     [r"i am hungry", ["You should get something to eat!"]],
     [r"suggest me some food", ["Sure! How about some pasta,pizza,burger or biriyani?"]],
     [r"help", ["You can ask me about the weather, introduce yourself, ask how I am, or just say hi!"]],
+    [r"thankyou", ["you're welcome! Let me know if there's anything else you need."]],
     [r"bye", ["Goodbye! Have a great day!"]],
     [r"(.*)", ["Sorry, I don't understand. Can you rephrase that?"]]
 ]
