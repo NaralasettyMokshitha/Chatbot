@@ -48,7 +48,7 @@ def chat():
     print("Welcome to the Chatbot! Type 'help' for assistance or 'bye' to exit.")
     while True:
         user_input = input("You: ").strip().lower()
-        if user_input == "quit":
+        if user_input == "bye":
             print("Chatbot: Goodbye! Have a great day!")
             break
         response = chatbot.respond(user_input)
