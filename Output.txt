@@ -24,4 +24,4 @@ Chatbot: you're welcome! Let me know if there's anything else you need.
 You: help
 Chatbot: You can ask me about the weather, introduce yourself, ask how I am, or just say hi!
 You: bye
-Chatbot: Goodbye! Have a great day.
+Chatbot: Goodbye! Have a great day!
